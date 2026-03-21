@@ -1,0 +1,129 @@
+{
+  "name": "Le Van <span class='text-primary'>An</span>",
+  "role": "<span class='text-primary'>Full-Stack</span> Developer",
+  "skills": "React, Next.js, Java Spring Boot",
+  "bio": "4+ years of experience in web development with <span class='text-normal-primary'>Java Spring Boot</span> and <span class='text-normal-primary'>React</span>, focusing on optimizing backend processes, enhancing UI/UX, and collaborating with cross-functional teams in product development.",
+  "companies": [
+    {
+      "time": "Jun 2025 - Present",
+      "company": "TMA",
+      "role": "Fullstack Developer",
+      "description": "Managed devices and ownership vouchers for a Telecommunications product.",
+      "domains": "Telecommunications. (Team size: 4)",
+      "job": [
+        "Collaborated with cross-functional teams to discuss and define OpenAPI specifications and database schema designs.",
+        "Worked closely with product owners and backend/frontend teams to refine API contracts and align on technical requirements.",
+        "Proposed UX improvements based on user behavior insights and implementation constraints to enhance overall product usability.",
+        "Implemented and maintained backend APIs following OpenAPI standards, and built UI components aligned with design specifications."
+      ],
+      "techs": [
+        "Next.js",
+        "TypeScript",
+        "TailwindCSS",
+        "Ant Design",
+        "Java Spring Boot",
+        "MySQL"
+      ]
+    },
+    {
+      "time": "Apr 2023 - Jun 2025",
+      "company": "TMA",
+      "role": "Fullstack Developer",
+      "description": "Collaborated with clients across China, India, and Europe to deliver reliable web solutions.",
+      "domains": "Telecommunications, Base Layer Networks. (Team size: 8)",
+      "job": [
+        "Conducted code reviews, pair programming, mentored intern developers, and led tech sharing sessions to boost team knowledge and collaboration.",
+        "Enabled real-time backend communication for alerts and notifications via WebSocket.",
+        "Developed tasks such as cron jobs, XLSX, CSV and PDF report generation.",
+        "Developed a User Activity log visualization in AGGrid using Elasticsearch.",
+        "Developed reusable core UI components in a monorepo, configured with TailwindCSS and a Figma-based design system, significantly reducing development time.",
+        "Refactored and migrated legacy code from AngularJS to ReactJS using TypeScript in Microfrontend architecture."
+      ],
+      "techs": [
+        "React.js",
+        "Java Spring Boot",
+        "Hibernate",
+        "MySQL",
+        "Elasticsearch",
+        "TypeScript"
+      ]
+    },
+    {
+      "time": "Apr 2022 - Apr 2023",
+      "company": "TMA",
+      "role": "Frontend Developer",
+      "description": "Collaborated with Europe clients to deliver high-quality web app solutions.",
+      "domains": "Service Industry. (Team size: 7)",
+      "job": [
+        "Mapped Figma design systems to React with Styled-components, ensuring consistent design and improved search visibility through QA checks.",
+        "Modified React Router to dynamically generate breadcrumbs, set page titles, and implement authentication guards for secure routing.",
+        "Customized React Query with advanced TypeScript to reduce boilerplate when working with APIs, enhancing code maintainability and developer efficiency.",
+        "Worked closely with design and testing teams to ensure seamless functionality and an optimal user experience.",
+        "Gained backend experience by contributing to small backend tasks, supporting the backend development alongside the team."
+      ],
+      "techs": [
+        "React.js",
+        "Java Spring Boot",
+        "MariaDB",
+        "TypeScript",
+        "Styled-Components"
+      ]
+    },
+    {
+      "time": "Dec 2021 - Apr 2022",
+      "company": "24HDEV",
+      "role": "Frontend Intern",
+      "description": "Collaborated with the UX/UI team in Da Nang to stabilize production systems.",
+      "domains": "Service Industry.",
+      "job": [
+        "Resolved critical production issues, resulting in a 20% reduction in downtime and increased application stability.",
+        "Collaborated with the UX/UI team to optimize the user interface, leading to a 20% reduction in bounce rate and an overall improvement in user satisfaction."
+      ],
+      "techs": [
+        "React.js",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "image": "",
+      "url": "",
+      "title": "E-Commerce App",
+      "subtitle": "Full-Stack Web Store",
+      "role": [
+        "Full-Stack Development: Developed a full-stack web app e-commerce store with product listing, cart management, and order processing.",
+        "Payment Integration: Integrated VNPay with Express.js to accept online payments.",
+        "Authentication: Implemented JWT to secure routes, enhance authentication, and improve user authorization."
+      ],
+      "description": [
+        "A full-stack e-commerce web application built with Node.js and Express.js, featuring VNPay payment integration, product management, and secure user authentication."
+      ],
+      "achievements": [
+        "Delivered a complete e-commerce solution including payments, authentication, and product management from scratch."
+      ],
+      "techs": ["React.js", "Node.js", "Express.js", "VNPay", "JWT", "MongoDB"]
+    }
+  ],
+  "sides": [
+    {
+      "url": "",
+      "title": "E-Commerce App",
+      "image": "",
+      "demo": "",
+      "subtitle": "Fullstack e-commerce with VNPay",
+      "description": [
+        "A full-stack web app e-commerce store integrated with VNPay and ExpressJs to accept payments. Implemented JWT to secure routes, enhance authentication, and improve user authorization."
+      ],
+      "features": [
+        "Payment Integration: Integrated VNPay with Express.js for online payment processing.",
+        "Secure Auth: Used JWT for authentication, authorization, and route protection."
+      ],
+      "techs": ["React.js", "Node.js", "Express.js", "VNPay", "JWT", "MongoDB"],
+      "objective": "Build a complete full-stack e-commerce store with online payment support and secure user authentication.",
+      "repo": "https://github.com/an-lee1308"
+    }
+  ]
+}
