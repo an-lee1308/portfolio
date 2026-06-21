@@ -5,43 +5,55 @@ import { useInView } from "react-intersection-observer";
 import About from "../components/about";
 import ChangeThemeBtn from "../components/change-theme-btn";
 import Companies from "../components/companies";
+import Education from "../components/education";
 import Layout from "../components/main-layout";
 import Projects from "../components/projects";
 import SparklesButton from "../components/resume-btn";
 import ShortAnEmailBtn from "../components/short-an-email-btn";
 import SideProjects from "../components/side-projects";
 import SocialList from "../components/social-list";
-import { bio, name, role, skills } from "../content.json";
+import { bio, name, projects, role, sides, skills } from "../content.json";
 
 function Main() {
   const about = useRef<HTMLDivElement | null>(null);
   const exp = useRef<HTMLDivElement | null>(null);
+  const education = useRef<HTMLDivElement | null>(null);
   const project = useRef<HTMLDivElement | null>(null);
   const sideProject = useRef<HTMLDivElement | null>(null);
 
   const { ref: aboutRef, inView: aboutPoint } = useInView();
   const { ref: expRef, inView: experiencePoint } = useInView();
+  const { ref: educationRef, inView: educationPoint } = useInView();
   const { ref: projectRef, inView: projectPoint } = useInView();
   const { ref: sideProjectRef, inView: sideProjectPoint } = useInView();
 
   const menu = useMemo(() => {
-    return [
+    const items = [
       { ref: about, point: aboutPoint, index: "01", label: "🤔 about" },
       { ref: exp, point: experiencePoint, index: "02", label: "🧑‍💻 experience" },
       {
-        ref: project,
-        point: projectPoint,
+        ref: education,
+        point: educationPoint,
         index: "03",
-        label: "💻 participated projects",
-      },
-      {
-        ref: sideProject,
-        point: sideProjectPoint,
-        index: "04",
-        label: "💪 personal projects",
+        label: "🎓 education",
       },
     ];
-  }, [aboutPoint, experiencePoint, projectPoint, sideProjectPoint]);
+    if (projects.length > 0)
+      items.push({
+        ref: project,
+        point: projectPoint,
+        index: "04",
+        label: "💻 participated projects",
+      });
+    if (sides.length > 0)
+      items.push({
+        ref: sideProject,
+        point: sideProjectPoint,
+        index: "05",
+        label: "💪 personal projects",
+      });
+    return items;
+  }, [aboutPoint, experiencePoint, educationPoint, projectPoint, sideProjectPoint]);
 
   const sanitizedContent = useMemo(
     () => ({
@@ -83,7 +95,6 @@ function Main() {
                 key={e.index}
                 className="t4 cursor-pointer"
                 onClick={() => {
-                  console.log(e.ref.current);
                   e.ref.current?.scrollIntoView({ behavior: "smooth" });
                 }}
               >
@@ -135,26 +146,39 @@ function Main() {
             <Companies />
           </div>
 
-          {/* projects */}
-          <div ref={projectRef}>
-            <div className="p-3 md:p-6" ref={project}>
-              <span className="c1">03.</span> Projects I've participated in{" "}
-              <span className="italic text-muted-foreground font-thin">
-                (some projects cannot be disclosed due to privacy policies)
-              </span>
+          {/* education */}
+          <div ref={educationRef} className="mb-10">
+            <div className="p-3 md:p-6" ref={education}>
+              <span className="c1">03.</span> Education
             </div>
 
-            <Projects />
+            <Education />
           </div>
+
+          {/* projects */}
+          {projects.length > 0 && (
+            <div ref={projectRef}>
+              <div className="p-3 md:p-6" ref={project}>
+                <span className="c1">04.</span> Projects I've participated in{" "}
+                <span className="italic text-muted-foreground font-thin">
+                  (some projects cannot be disclosed due to privacy policies)
+                </span>
+              </div>
+
+              <Projects />
+            </div>
+          )}
 
           {/* side projects */}
-          <div ref={sideProjectRef} className="">
-            <div className="p-3 md:p-6" ref={sideProject}>
-              <span className="c1">04.</span> Side Projects I’ve Built
-            </div>
+          {sides.length > 0 && (
+            <div ref={sideProjectRef} className="">
+              <div className="p-3 md:p-6" ref={sideProject}>
+                <span className="c1">05.</span> Side Projects I’ve Built
+              </div>
 
-            <SideProjects />
-          </div>
+              <SideProjects />
+            </div>
+          )}
         </div>
       </div>
     </Layout>

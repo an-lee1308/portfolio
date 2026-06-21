@@ -1,8 +1,23 @@
-import FsLightbox from "fslightbox-react";
-import { Suspense, useState } from "react";
-import { sides } from "../content.json";
+import { Suspense, lazy, useState } from "react";
+import { sides as rawSides } from "../content.json";
 import SideProject from "./side-project";
 
+const FsLightbox = lazy(() => import("fslightbox-react"));
+
+type SideEntry = {
+  url?: string;
+  image?: string;
+  demo?: string;
+  title: string;
+  description: string[];
+  features: string[];
+  techs: string[];
+  repo: string;
+  subtitle?: string;
+  objective?: string;
+};
+
+const sides = rawSides as SideEntry[];
 const images = sides.map((e) => `${e.demo}`);
 
 const SideProjects = () => {

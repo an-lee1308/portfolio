@@ -1,129 +1,92 @@
 {
   "name": "Le Van <span class='text-primary'>An</span>",
   "role": "<span class='text-primary'>Full-Stack</span> Developer",
-  "skills": "React, Next.js, Java Spring Boot",
-  "bio": "4+ years of experience in web development with <span class='text-normal-primary'>Java Spring Boot</span> and <span class='text-normal-primary'>React</span>, focusing on optimizing backend processes, enhancing UI/UX, and collaborating with cross-functional teams in product development.",
+  "skills": "ReactJS, NextJS, Java Spring Boot, TypeScript",
+  "bio": "4+ years of experience building scalable <span class='text-normal-primary'>ReactJS</span>, <span class='text-normal-primary'>NextJS</span>, and <span class='text-normal-primary'>Java</span> applications for ICON plc and Nokia. Skilled in Agile methodologies, CI/CD pipelines, and Jest-based testing — delivered a 20% performance improvement and resolved 300+ critical bugs across enterprise-grade platforms.",
   "companies": [
     {
-      "time": "Jun 2025 - Present",
-      "company": "TMA",
-      "role": "Fullstack Developer",
-      "description": "Managed devices and ownership vouchers for a Telecommunications product.",
-      "domains": "Telecommunications. (Team size: 4)",
+      "time": "Aug 2025 - Present",
+      "company": "TMA Solutions",
+      "role": "Software Engineer",
+      "description": "sZTP application (Nokia) — certificate & ownership-voucher (OV) management platform.",
+      "domains": "Telecommunications.",
       "job": [
-        "Collaborated with cross-functional teams to discuss and define OpenAPI specifications and database schema designs.",
-        "Worked closely with product owners and backend/frontend teams to refine API contracts and align on technical requirements.",
-        "Proposed UX improvements based on user behavior insights and implementation constraints to enhance overall product usability.",
-        "Implemented and maintained backend APIs following OpenAPI standards, and built UI components aligned with design specifications."
+        "Translated high-fidelity Figma designs into reusable React components, ensuring a consistent and responsive UI/UX across modules.",
+        "Defined OpenAPI specifications and database schema designs with cross-functional teams, establishing a single source of truth for the platform's service contracts.",
+        "Partnered with product owners and backend/frontend teams to refine API contracts and align technical requirements, streamlining integration and accelerating delivery.",
+        "Championed UX improvements grounded in user-behavior insights and implementation constraints, measurably raising overall product usability.",
+        "Engineered and maintained backend APIs to OpenAPI standards while shipping UI components faithful to design specs — owning features end-to-end as a full-stack contributor."
       ],
-      "techs": [
-        "Next.js",
-        "TypeScript",
-        "TailwindCSS",
-        "Ant Design",
-        "Java Spring Boot",
-        "MySQL"
-      ]
+      "techs": ["Next.js", "React Query", "Recharts", "Tailwind CSS", "AWS"]
     },
     {
-      "time": "Apr 2023 - Jun 2025",
-      "company": "TMA",
-      "role": "Fullstack Developer",
-      "description": "Collaborated with clients across China, India, and Europe to deliver reliable web solutions.",
-      "domains": "Telecommunications, Base Layer Networks. (Team size: 8)",
+      "time": "Feb 2023 - Aug 2025",
+      "company": "TMA Solutions",
+      "role": "Software Engineer",
+      "description": "Access Management (Nokia) — multi-domain SDN/NFV automation platform for telecom providers.",
+      "domains": "Telecommunications, Base Layer Networks.",
       "job": [
-        "Conducted code reviews, pair programming, mentored intern developers, and led tech sharing sessions to boost team knowledge and collaboration.",
-        "Enabled real-time backend communication for alerts and notifications via WebSocket.",
-        "Developed tasks such as cron jobs, XLSX, CSV and PDF report generation.",
-        "Developed a User Activity log visualization in AGGrid using Elasticsearch.",
-        "Developed reusable core UI components in a monorepo, configured with TailwindCSS and a Figma-based design system, significantly reducing development time.",
-        "Refactored and migrated legacy code from AngularJS to ReactJS using TypeScript in Microfrontend architecture."
+        "Spearheaded migration from AngularJS to ReactJS, modularizing 30+ components and maintaining 100% feature parity to minimise disruption.",
+        "Developed 8 core features and resolved 90+ bugs and 15 enhancement tickets through iterative sprints, boosting platform stability by 25%.",
+        "Architected complex UI components (trees, forms, tables, filters, search, CRUD) with optimised rendering logic, improving render performance by 30%.",
+        "Established automated CI/CD pipelines and GitLab best practices, managing 5 seamless releases and cutting deployment time by 50%.",
+        "Integrated WebSocket to enable real-time updates for feeds and alerts without page reloads."
       ],
-      "techs": [
-        "React.js",
-        "Java Spring Boot",
-        "Hibernate",
-        "MySQL",
-        "Elasticsearch",
-        "TypeScript"
-      ]
+      "techs": ["React.js", "Java Spring Boot", "Elasticsearch", "Docker", "Kubernetes", "MySQL"]
     },
     {
-      "time": "Apr 2022 - Apr 2023",
-      "company": "TMA",
-      "role": "Frontend Developer",
-      "description": "Collaborated with Europe clients to deliver high-quality web app solutions.",
-      "domains": "Service Industry. (Team size: 7)",
+      "time": "Jun 2022 - Feb 2023",
+      "company": "TMA Solutions",
+      "role": "Software Engineer",
+      "description": "Healthcare System (ICON plc) — clinical-trial data reporting platform for 200+ pharmaceutical researchers.",
+      "domains": "Healthcare / Life Sciences.",
       "job": [
-        "Mapped Figma design systems to React with Styled-components, ensuring consistent design and improved search visibility through QA checks.",
-        "Modified React Router to dynamically generate breadcrumbs, set page titles, and implement authentication guards for secure routing.",
-        "Customized React Query with advanced TypeScript to reduce boilerplate when working with APIs, enhancing code maintainability and developer efficiency.",
-        "Worked closely with design and testing teams to ensure seamless functionality and an optimal user experience.",
-        "Gained backend experience by contributing to small backend tasks, supporting the backend development alongside the team."
+        "Conducted code reviews and pair programming, mentored intern developers, and led tech-sharing sessions to raise team knowledge and collaboration.",
+        "Accelerated page-load times by 20% by eliminating redundant hover handlers in a third-party UI library.",
+        "Architected responsive interfaces — tables, forms, and reports — delivering seamless experiences across desktop and mobile.",
+        "Customised React Query with advanced TypeScript to reduce API boilerplate, improving maintainability and developer efficiency."
       ],
-      "techs": [
-        "React.js",
-        "Java Spring Boot",
-        "MariaDB",
-        "TypeScript",
-        "Styled-Components"
-      ]
+      "techs": ["React.js", "Java Spring Boot", "Elasticsearch", "AWS", "DynamoDB"]
+    },
+    {
+      "time": "Apr 2022 - Jun 2022",
+      "company": "TMA Solutions",
+      "role": "Software Engineer",
+      "description": "Restaurant Management System (RMS) — web & mobile app streamlining inventory, orders, reservations, and billing.",
+      "domains": "Service Industry.",
+      "job": [
+        "Engineered NextJS front-end with server-side rendering and optimised API calls, improving page-load performance by 25%.",
+        "Designed user-centred wireframes and prototypes in Figma, boosting staff task-completion rates by 30%.",
+        "Mentored intern developers through weekly code reviews and best-practice workshops, raising code quality and reducing bugs by 20%.",
+        "Collaborated on DynamoDB schema and Spring JPA integration for inventory/reservations modules, cutting data-fetch latency by 20%.",
+        "Conducted business analysis and manual QA for stock-reporting features — gathered feedback, defined KPIs, and validated 50+ test cases for release readiness."
+      ],
+      "techs": ["Next.js", "Java Spring Boot", "Spring JPA", "MySQL", "AWS"]
     },
     {
       "time": "Dec 2021 - Apr 2022",
-      "company": "24HDEV",
+      "company": "24H Dev",
       "role": "Frontend Intern",
-      "description": "Collaborated with the UX/UI team in Da Nang to stabilize production systems.",
-      "domains": "Service Industry.",
+      "description": "Online Bookstore System — online bookstore platform.",
+      "domains": "E-Commerce.",
       "job": [
-        "Resolved critical production issues, resulting in a 20% reduction in downtime and increased application stability.",
-        "Collaborated with the UX/UI team to optimize the user interface, leading to a 20% reduction in bounce rate and an overall improvement in user satisfaction."
+        "Developed and maintained responsive user interfaces with ReactJS, translating Figma designs into reusable components that accelerate feature delivery.",
+        "Collaborated with senior developers and the UX/UI team to implement enhancements and resolve UI bugs, ensuring cross-browser compatibility and a seamless experience.",
+        "Participated in Agile/Scrum ceremonies — daily stand-ups, sprint planning, and code reviews — gaining hands-on experience with Git workflow and team practices."
       ],
-      "techs": [
-        "React.js",
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ]
+      "techs": ["React.js", "Node.js", "MySQL"]
     }
   ],
-  "projects": [
+  "education": [
     {
-      "image": "",
-      "url": "",
-      "title": "E-Commerce App",
-      "subtitle": "Full-Stack Web Store",
-      "role": [
-        "Full-Stack Development: Developed a full-stack web app e-commerce store with product listing, cart management, and order processing.",
-        "Payment Integration: Integrated VNPay with Express.js to accept online payments.",
-        "Authentication: Implemented JWT to secure routes, enhance authentication, and improve user authorization."
-      ],
-      "description": [
-        "A full-stack e-commerce web application built with Node.js and Express.js, featuring VNPay payment integration, product management, and secure user authentication."
-      ],
-      "achievements": [
-        "Delivered a complete e-commerce solution including payments, authentication, and product management from scratch."
-      ],
-      "techs": ["React.js", "Node.js", "Express.js", "VNPay", "JWT", "MongoDB"]
+      "time": "2018 - 2022",
+      "degree": "Bachelor of Science in Information Technology",
+      "school": "University of Information Technology (UIT)",
+      "link": "https://www.uit.edu.vn/",
+      "location": "Ho Chi Minh City, Vietnam",
+      "description": "Vietnam National University (VNU-HCM)."
     }
   ],
-  "sides": [
-    {
-      "url": "",
-      "title": "E-Commerce App",
-      "image": "",
-      "demo": "",
-      "subtitle": "Fullstack e-commerce with VNPay",
-      "description": [
-        "A full-stack web app e-commerce store integrated with VNPay and ExpressJs to accept payments. Implemented JWT to secure routes, enhance authentication, and improve user authorization."
-      ],
-      "features": [
-        "Payment Integration: Integrated VNPay with Express.js for online payment processing.",
-        "Secure Auth: Used JWT for authentication, authorization, and route protection."
-      ],
-      "techs": ["React.js", "Node.js", "Express.js", "VNPay", "JWT", "MongoDB"],
-      "objective": "Build a complete full-stack e-commerce store with online payment support and secure user authentication.",
-      "repo": "https://github.com/an-lee1308"
-    }
-  ]
+  "projects": [],
+  "sides": []
 }

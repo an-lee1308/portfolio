@@ -1,8 +1,21 @@
-import FsLightbox from "fslightbox-react";
-import { Suspense, useState } from "react";
-import { projects } from "../content.json";
+import { Suspense, lazy, useState } from "react";
+import { projects as rawProjects } from "../content.json";
 import Project from "./project-item";
 
+const FsLightbox = lazy(() => import("fslightbox-react"));
+
+type ProjectEntry = {
+  image: string;
+  url?: string;
+  title: string;
+  subtitle?: string;
+  description: string[];
+  role: string[] | undefined;
+  achievements?: string[];
+  techs: string[];
+};
+
+const projects = rawProjects as ProjectEntry[];
 const images = projects.map((e) => e.image);
 
 const Projects = () => {

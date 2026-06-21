@@ -1,5 +1,4 @@
 import { FaEnvelope, FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
 import { externals } from "../urls";
 import Social from "./social";
 
@@ -20,11 +19,6 @@ const SocialList = () => {
         url={externals.email}
         type="Email"
         icon={<FaEnvelope className="w-4 h-4" />}
-      />
-      <Social
-        url={externals.leetcode}
-        type="Leetcode"
-        icon={<SiLeetcode className="w-4 h-4" />}
       />
     </div>
   );

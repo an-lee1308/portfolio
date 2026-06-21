@@ -27,17 +27,19 @@ const my_profile: IGoodDeveloper = {
   title: 'Full-Stack Developer',
   yoe: '4+',
   skills: {
-    languages: ['JavaScript', 'TypeScript', 'Java'],
+    languages: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Java'],
     frontend: [
       'React.js', 'Next.js', 'TailwindCSS', 'Bootstrap',
-      'Redux', 'Zustand', 'Antd'
+      'Redux', 'Zustand'
     ],
     backend: [
-      'Java Spring Boot', 'Hibernate',
+      'Java Spring Boot', 'Spring Framework', 'Hibernate',
       'Node.js', 'WebSocket', 'Elasticsearch'
     ],
-    databases: ['MySQL', 'PostgreSQL', 'MongoDB'],
-    tool_n_platforms: ['Docker', 'Kubernetes', 'Jira', 'Confluence']
+    databases: ['MySQL', 'PostgreSQL', 'MongoDB', 'Redis', 'DynamoDB'],
+    cloud_n_devops: ['AWS (EC2, S3, Lambda)', 'Docker', 'Kubernetes', 'Jenkins', 'CI/CD'],
+    tools: ['Git/GitLab', 'Jira/Confluence', 'Figma', 'Chrome DevTools'],
+    testing: ['Jest', 'Agile/Scrum']
   },
   personality_traits: {
     hard_worker: true,
